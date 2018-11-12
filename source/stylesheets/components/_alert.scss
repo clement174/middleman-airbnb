@@ -2,6 +2,13 @@
  * Your CSS code for flash notices and alerts
 * ------------------------------------- */
 
+h1, h2, h3 {
+  font-family: $headers-font;
+}
+p, a {
+  font-family: $body-font;
+}
+
 .alert {
   margin: 0;
   text-align: center;
