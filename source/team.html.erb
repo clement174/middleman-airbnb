@@ -1,0 +1,21 @@
+---
+title: Le Wagon - Middleman - Team
+---
+
+<div class="layout">
+  <div class="container">
+    <div class="profile">
+      <h1 class="text-center">This template is built <i class="fas fa-heart"></i> with by</h1>
+      <ul class="list-inline text-center">
+        <% ["clement174", "henridvs"].each do |gh_username| %>
+          <li>
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
+            <h3><i class="fab fa-github"></i><%= link_to "#{gh_username.capitalize}","https://github.com/#{gh_username}"%></h3>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
