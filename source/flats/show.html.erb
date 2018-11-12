@@ -1,0 +1,76 @@
+<!-- source/flats/show.html.erb -->
+
+<!-- Access data.flats with owner's name as key -->
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+<div class="background-img">
+  <img src="https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>" alt="city" class="cover-img">
+</div>
+
+<div class="content">
+  <div class="grid">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="profile">
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle" %>
+          <% owner %>
+          <div class="content-infos">
+            <h2><%= flat.description %></h2>
+            <p><%= flat.city_name %></p>
+            <p><%= flat.rating %>/5</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="booking text-center">
+          <form action="">
+            <div class="form-group">
+              <input type="text" placeholder="checkin" class="form-control input">
+              <input type="text" placeholder="checkout" class="form-control input">
+            </div>
+            <select id="resa" name="booking" class="form-control input">
+              <option value="1">1 guest</option>
+              <option value="2">2 guest</option>
+              <option value="3">3 guest</option>
+            </select>
+            <a class="btn btn-primary btn">Search</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="light-gray">
+  <div class="about">
+    <div class="info">
+      <h3>About this flat</h3>
+      <p><%= flat.description %></p>
+    </div>
+    <div class="space">
+      <p>The Space </p>
+      <div class="space-1">
+        <p>Accommodates: 2</p>
+        <p>Bathrooms: 1</p>
+        <p>Bed type: Real Bed</p>
+        <p>Bedrooms: 1</p>
+      </div>
+      <div class="space-2">
+        <p>Beds: 1</p>
+        <p>Property type: Apartment</p>
+        <p>Room type: Entire home/apt</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+

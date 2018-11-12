@@ -1,0 +1,65 @@
+h1, h2, h3 {
+  font-family: $headers-font;
+}
+p, a {
+  font-family: $body-font;
+}
+
+.background-img {
+  background-size: cover;
+
+  img {
+    height: 500px;
+    width: 100vw;
+  }
+}
+.profile {
+  width: 70vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+.img-circle {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+}
+.booking {
+  width: 70vh;
+  padding: 20px;
+  margin-top: 23px;
+  background: $light-gray;
+}
+.layout-gray {
+  background: $light-gray
+}
+.about {
+  padding: 20px;
+  .info {
+    color: black;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+.space {
+  display: flex;
+  justify-content: space-between;
+}
+.amenities {
+  display: flex;
+  justify-content: space-between;
+}
